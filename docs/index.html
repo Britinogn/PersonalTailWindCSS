@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="px-10   ">
+        <header id="header" class="p-8 flex justify-between gap-4 fixed top-0 left-0 w-full z-50   shadow transition-all duration-300">
+
+            <div class="font-bold text-4xl text-white  ">
+                <a href="#">B<span class="text-yellow-500">i</span>g<span class="text-yellow-500">T</span>i<span class="text-red-600">No</span></a>
+            </div>
+
+            <!-- Hamburger Menu Mobile  -->
+
+            <div class="md:hidden relative">
+                <button id="mobile-menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6 text-white absolute" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <navbar class="hidden md:flex ">
+                <ul class="inline-flex gap-2 justify-between font-bold md:text-2xl lg:text-4xl">
+                    <li><a href="#" class="text-gray-400 hover:text-blue-600">Home</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-600">About</a></li>
+                    <li><a href="#skills" class="text-gray-400 hover:text-blue-600">Skills</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-600">Projects</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-600">Contacts</a></li>
+                </ul>
+            </navbar>
+        
+          <!-- Mobile Menu (hidden by default) -->
+        
+            <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+                <li class="list-none bg-transparent text-lg">
+                    <a href="#" class="block py-2 text-gray-300 hover:text-yellow-400">Home</a>
+                    <a href="#" class="block py-2 text-gray-300 hover:text-yellow-400">About</a>
+                    <a href="#skills" class="block py-2 text-gray-300 hover:text-yellow-400">Skills</a>
+                    <a href="#" class="block py-2 text-gray-300 hover:text-yellow-400">Projects</a>
+                    <a href="#" class="block py-2 text-gray-300 hover:text-yellow-400 ">Contacts</a>
+                </li> 
+            </div>
+        </header>
+    </section>
+
+
+
+
+
+
+    <!-- hero section -->
+
+    <section class="relative h-screen pt-16 px-8">
+        <div class="px-0 mx-auto container">
+            <div class="relative z-10  mx-auto px-4 h-full flex  text-white ">
+
+                <div>
+                    <h1 class="font-bold text-3xl md:text-4xl pt-20 ">Welcome to Tino Nova Tech.... Where
+                        <span class="text-blue-500">INNOVATION MEETS IMPACT</span>
+                        
+                    </h1>
+                    <p class="text-md mt-4 md:text-lg max-w-xl text-white justify-items-end "> 
+                        At Tino Nova Tech, we are committed to crafting smart, scalable, 
+                        and sustainable solutions that address real-world challenges. 
+                        Our mission is to harness the power of technology to make life better, 
+                        businesses smarter, and communities stronger.
+                    </p>
+                </div>
+
+                <div >
+                    <img src="img/Website Designer Nigeria.png" alt="image" 
+                    class="hidden md:block w-full h-auto">
+                </div>
+
+
+            </div>
+
+            <div>
+                <img src="img/moon.png" alt="MooN"
+                    class=" absolute inset-0 w-full h-full object-cover z-0"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!--  Skills or services section -->
+
+    <section class="bg-gray-200 pt-12 px-10 " id="skills">
+         <h1 class="text-center font-bold fz text-2xl md:text-3xl lg:text-4xl pb-10 ">Skills & Services</h1>
+        
+         <div class="">
+           
+            <div class="skills  md:grid grid-cols-2 gap-8 lg:grid-cols-4">
+                <div class="skills-title bg-indigo-300 p-5 border-8 ">
+                    <h2 class="font-bold pb-2 text-2xl ">
+                        Technical Skills
+                    </h2>
+
+                    <p class="text-md">
+                        <span>Web Development</span>
+                        <span>Mobile App Development</span>
+                        <span>UI/UX Design</span>
+                        <span>API Integration</span>
+                    </p>
+                </div>
+
+                <div class="skills-title bg-indigo-300 p-5 border-8 ">
+                    <h2 class="font-bold pb-2 text-2xl ">
+                        Tools & Technologies
+                    </h2>
+
+                    <p class="text-md"></p>
+                        <span>HTML, CSS, JavaScript</span>
+                        <span>React, Tailwind CSS</span>
+                        <span>Python, Django</span>
+                        <span>MySQL, MongoDB</span>
+                    </p>
+                </div>
+
+                <div class="skills-title bg-indigo-300 p-5 border-8 ">
+                    <h2 class="font-bold pb-2 text-2xl ">
+                         Services Offered
+                    </h2>
+
+                    <p class="text-md"></p>
+                        <span>Website Design & Development</span>
+                        <span>Full-Stack Web Solutions</span>
+                        <span>E-commerce Website Setup</span>
+                        <span>SEO Optimization</span>
+                    </p>
+                </div>
+
+                <div class="skills-title bg-indigo-300 p-5 border-8 ">
+                    <h2 class="font-bold pb-2 text-2xl ">
+                        Soft Skills
+                    </h2>
+
+                    <p class="text-md"></p>
+                        <span>Communication</span>
+                        <span>Problem Solving</span>
+                        <span>Team Collaboration</span>
+                        <span>Time Management</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact form -->
+
+    <section class="bg-white py-10 px-10 sm:px-6 lg:px-8">
+        <div class="max-w-xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Contact Us</h2>
+        
+            <form class="space-y-4">
+                <!-- Name -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" placeholder="Your Name" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:outline-none" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" placeholder="you@example.com" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:outline-none" required>
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea rows="5" placeholder="Write your message..." class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:outline-none" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit" class="bg-purple-700 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-xl transition duration-200 ">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <section>
+        <div class="container px-10">
+
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-400 text-gray-700 py-8 mt-10 px-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+      
+                <!-- Logo -->
+                <!-- <div class="text-2xl font-bold text-purple-700">
+                    BigTino
+                </div> -->
+
+                <div class="font-bold text-3xl text-black logo ">
+                    <a href="#">B<span class="text-blue-500">i</span>g<span class="text-blue-500">T</span>i<span class="text-red-600">No</span></a>
+                </div>
+
+                <!-- Links (optional) -->
+                <div class="flex space-x-6 text-md">
+                    <a href="#" class="hover:text-purple-600">Home</a>
+                    <a href="#" class="hover:text-purple-600">About</a>
+                    <a href="#" class="hover:text-purple-600">Projects</a>
+                    <a href="#" class="hover:text-purple-600">Contact</a>
+                </div>
+            </div>
+
+            <!-- Bottom note -->
+            <div class="text-center text-sm text-base font-semibold mt-6 ">
+            &copy; 2025 BigTino. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+<!-- javascript -->
+    <script src="/docs/script.js"></script>
+</body>
+</html>
