@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Manipulation</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-image: url(/docs/img/moon.png);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <section >
+        <div class="container w-lg h-[300px]">
+        
+            <!-- <div class="border-2 border-blue-500 p-4"> -->
+            <div class=" header bg-gray-600 text-white  p-2 mx-auto m-1 text-2xl border-solid border-purple-800 ">
+                <h2>Javascript Quote Generator</h2>
+            </div>
+
+            <div class="main-content bg-white w-full m-[20px] rounded-tl p-12  h-[300px] rounded-2xl ">
+                
+                <div class="text-area pt-8 text-center text-white text-sm/8">
+                    <span class="quote font-semibold text-black ">
+                        “Imagination is more important than knowledge. 
+                        For knowledge is limited, whereas imagination 
+                        embraces the entire world.”
+                    </span>
+                </div>
+
+                <div class="person text-center text-red-600 uppercase font-bold pt-3 text-2xl mt-auto">
+                   Albert Einstein
+                </div>
+
+                <di7v class="button-area text-center">
+                    <button id="new-quote" class="text-2xl bg-black p-2 text-white font-bold row-auto mt-5 rounded-tl-lg" >
+                        New Quote
+                    </button>
+                </di7v>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
