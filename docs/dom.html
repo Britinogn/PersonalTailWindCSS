@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+ 
+
+    <style>
+        body{
+            height: 100vh;
+            background: url(/docs/img/moon.png) no-repeat center center/cover ;
+            position: relative;
+            text-align: ;
+        }
+
+        #modal{
+            animation: animatemodal;
+            animation-duration: .4s;
+
+        }
+
+        @keyframes animatemodal {
+            from{
+                top: -300px;
+                opacity: 0;
+            }
+
+            to{
+                top: 50%;
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+<body >
+    <button id="open-btn" class="top-70 absolute bg-transparent h-15 text-xl text-white left-10 border-solid border-2 p-2 cursor-pointer shadow-sm hover:bg-white hover:text-black">
+        <p>Where's Our Modal</p>
+    </button>
+
+    <!-- modal and modal background -->
+     <div id="modal-container" class="hidden fixed top-0 left-0 w-full h-full z-[1]">
+        <div id="modal" class="bg-white absolute top-20 left-50 transform w-20 pt-2 pb-5 p-1 
+        border-2 text-md flex justify-between">
+            <p>Here I am!</p>
+            <div id="close-btn" class="text-3xl cursor-pointer text-red-600">&times;</div>
+        </div>
+     </div>
+
+     <script src="dom.js"></script>
+</body>
+</html>

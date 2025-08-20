@@ -77,3 +77,9 @@ btn.addEventListener('click', function(){
     quote.innerHTML = quotes[random].quote;
     person.innerHTML = quotes[random].person;
 })
+
+
+function dark(){
+    document.style.backgroundColor = "Black";
+    document.style.color = "white";
+}
