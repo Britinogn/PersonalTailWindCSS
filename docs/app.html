@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
+        
         body{
             display: flex;
             height: 100vh;
             justify-content: center;
             align-items: center;
-            background-image: url(/docs/img/moon.png);
+            background: url(/docs/img/moon.png) no-repeat center center/cover;
             text-align: center;
         }
+
     </style>
 </head>
 
@@ -32,32 +34,18 @@
                 <h2>Voices of Strength</h2>
             </div>
 
-            <div class="main-content bg-white w-full m-[20px] rounded-tl p-12  h-[300px] rounded-2xl ">
-                
-                <div class="text-area pt-8 text-center text-white text-sm/8">
-                    <span class="quote font-semibold text-black ">
-                        “Imagination is more important than knowledge. 
-                        For knowledge is limited, whereas imagination 
-                        embraces the entire world.”
-                    </span>
-                </div>
-
-                <div class="person text-center text-red-600 uppercase font-bold pt-3 text-2xl mt-auto">
-                   Albert Einstein
-                </div>
-
-                <di7v class="button-area text-center">
-                    <button id="new-quote" class="text-2xl bg-black p-2 text-white font-bold row-auto mt-5 rounded-tl-lg" >
-                        New Quote
-                    </button>
-
-                    
-                    <button onclick="dark()" class="text-2xl bg-black p-2 text-white font-bold row-auto mt-5 rounded-tl-lg">Dark Theme</button>
-
-                </di7v>
+            <div id="post-container" class="main-content bg-white w-full m-[20px] rounded-tl p-12  h-[300px] rounded-2xl ">
+               <button onclick="newQuote()" class="text-2xl bg-black p-2 text-white font-bold row-auto mt-5 rounded-tl-lg" >
+                New Quote
+            </button> 
+                <!-- <p> Random Quotes </p>    -->
             </div>
-            
+
+                           
+
+        
         </div>
+        
     </section>
 
 
