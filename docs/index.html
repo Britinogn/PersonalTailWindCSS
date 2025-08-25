@@ -9,17 +9,17 @@
 </head>
 <body>
     <section class="px-10 ">
-        <header id="header" class="p-8 flex justify-between gap-4 fixed top-0 left-0 w-full z-50  shadow transition-all duration-300">
+        <header id="header" class="fixed top-0 left-0 z-50 flex justify-between w-full gap-4 p-8 transition-all duration-300 shadow">
 
-            <div class="font-bold text-4xl text-white  ">
+            <div class="text-4xl font-bold text-white ">
                 <a href="#">B<span class="text-yellow-500">i</span>g<span class="text-yellow-500">T</span>i<span class="text-red-600">No</span></a>
             </div>
 
             <!-- Hamburger Menu Mobile  -->
 
-            <div class="md:hidden relative">
+            <div class="relative md:hidden">
                 <button id="mobile-menu-btn" class="text-gray-600 focus:outline-none">
-                    <svg class="w-6 h-6 text-white absolute" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="absolute w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
@@ -27,7 +27,7 @@
             </div>
 
             <navbar class="hidden md:flex ">
-                <ul class="inline-flex gap-2 justify-between font-bold md:text-2xl lg:text-4xl">
+                <ul class="inline-flex justify-between gap-2 font-bold md:text-2xl lg:text-4xl">
                     <li><a href="#" class="text-white hover:text-blue-600">Home</a></li>
                     <li><a href="#" class="text-white hover:text-blue-600">About</a></li>
                     <li><a href="#" class="text-white hover:text-blue-600">Skills</a></li>
@@ -38,8 +38,8 @@
         
           <!-- Mobile Menu (hidden by default) -->
         
-            <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
-                <li class="list-none bg-transparent text-lg">
+            <div id="mobile-menu" class="hidden px-4 pb-4 md:hidden">
+                <li class="text-lg list-none bg-transparent">
                     <a href="#" class="block py-2 text-white hover:text-yellow-400">Home</a>
                     <a href="#" class="block py-2 text-white hover:text-yellow-400">About</a>
                     <a href="#" class="block py-2 text-white hover:text-yellow-400">Skills</a>
@@ -57,16 +57,16 @@
 
     <!-- hero section -->
 
-    <section class="relative h-screen pt-16 px-8">
-        <div class="px-0 mx-auto container">
-            <div class="relative z-10  mx-auto px-4 h-full flex  text-white ">
+    <section class="relative h-screen px-8 pt-16">
+        <div class="container px-0 mx-auto">
+            <div class="relative z-10 flex h-full px-4 mx-auto text-white ">
 
                 <div>
-                    <h1 class="font-bold text-3xl md:text-4xl pt-20 ">Welcome to Tino Nova Tech.... Where
+                    <h1 class="pt-20 text-3xl font-bold md:text-4xl ">Welcome to Tino Nova Tech.... Where
                         <span class="text-blue-500">INNOVATION MEETS IMPACT</span>
                         
                     </h1>
-                    <p class="text-md mt-4 md:text-lg max-w-xl text-white text-justify"> 
+                    <p class="max-w-xl mt-4 text-justify text-white text-md md:text-lg"> 
                         At Tino Nova Tech, we are committed to crafting smart, scalable, 
                         and sustainable solutions that address real-world challenges. 
                         Our mission is to harness the power of technology to make life better, 
@@ -76,7 +76,7 @@
 
                 <div >
                     <img src="img/Website Designer Nigeria.png" alt="image" 
-                    class="hidden md:block w-full h-auto">
+                    class="hidden w-full h-auto md:block">
                 </div>
 
 
@@ -84,7 +84,7 @@
 
             <div>
                 <img src="img/moon.png" alt="MooN"
-                    class=" absolute inset-0 w-full h-full object-cover z-0"
+                    class="absolute inset-0 z-0 object-cover w-full h-full "
                 >
             </div>
         </div>
@@ -92,14 +92,14 @@
 
     <!--  Skills or services section -->
 
-    <section class="bg-gray-200 pt-12 px-10 " id="skills">
-         <h1 class="text-center font-bold fz text-2xl md:text-3xl lg:text-4xl pb-10 ">Skills & Services</h1>
+    <section class="px-10 pt-12 bg-gray-200 " id="skills">
+         <h1 class="pb-10 text-2xl font-bold text-center fz md:text-3xl lg:text-4xl ">Skills & Services</h1>
         
          <div class="">
            
-            <div class="skills  md:grid grid-cols-2 gap-8 lg:grid-cols-4">
-                <div class="skills-title bg-indigo-300 p-5 border-8 ">
-                    <h2 class="font-bold pb-2 text-2xl ">
+            <div class="grid-cols-2 gap-8 skills md:grid lg:grid-cols-4">
+                <div class="p-5 bg-indigo-300 border-8 skills-title ">
+                    <h2 class="pb-2 text-2xl font-bold ">
                         Technical Skills
                     </h2>
 
@@ -111,8 +111,8 @@
                     </p>
                 </div>
 
-                <div class="skills-title bg-indigo-300 p-5 border-8 ">
-                    <h2 class="font-bold pb-2 text-2xl ">
+                <div class="p-5 bg-indigo-300 border-8 skills-title ">
+                    <h2 class="pb-2 text-2xl font-bold ">
                         Tools & Technologies
                     </h2>
 
@@ -124,8 +124,8 @@
                     </p>
                 </div>
 
-                <div class="skills-title bg-indigo-300 p-5 border-8 ">
-                    <h2 class="font-bold pb-2 text-2xl ">
+                <div class="p-5 bg-indigo-300 border-8 skills-title ">
+                    <h2 class="pb-2 text-2xl font-bold ">
                          Services Offered
                     </h2>
 
@@ -137,8 +137,8 @@
                     </p>
                 </div>
 
-                <div class="skills-title bg-indigo-300 p-5 border-8 ">
-                    <h2 class="font-bold pb-2 text-2xl ">
+                <div class="p-5 bg-indigo-300 border-8 skills-title ">
+                    <h2 class="pb-2 text-2xl font-bold ">
                         Soft Skills
                     </h2>
 
@@ -155,32 +155,32 @@
 
     <!-- Contact form -->
 
-    <section class="bg-blue-100 py-10 px-10 sm:px-6 lg:px-8">
+    <section class="px-10 py-10 bg-blue-100 sm:px-6 lg:px-8">
         <div class="max-w-xl mx-auto">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Contact Us</h2>
+            <h2 class="mb-6 text-2xl font-bold text-center text-gray-800">Contact Us</h2>
         
             <form class="space-y-4">
                 <!-- Name -->
                 <div>
                     <label class="block text-sm font-medium text-gray-700">Name</label>
-                    <input type="text" placeholder="Your Name" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:outline-none" required>
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:outline-none" required>
                 </div>
 
                 <!-- Email -->
                 <div>
                     <label class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" placeholder="you@example.com" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:outline-none" required>
+                    <input type="email" placeholder="you@example.com" class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:outline-none" required>
                 </div>
 
                 <!-- Message -->
                 <div>
                     <label class="block text-sm font-medium text-gray-700">Message</label>
-                    <textarea rows="5" placeholder="Write your message..." class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:outline-none" required></textarea>
+                    <textarea rows="5" placeholder="Write your message..." class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:outline-none" required></textarea>
                 </div>
 
                 <!-- Submit Button -->
                 <div>
-                    <button type="submit" class="bg-purple-700 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-xl transition duration-200 ">
+                    <button type="submit" class="px-6 py-2 font-semibold text-white transition duration-200 bg-purple-700 hover:bg-blue-700 rounded-xl ">
                         Send Message
                     </button>
                 </div>
@@ -190,16 +190,16 @@
     
 
     <!-- footer section -->
-    <footer class="bg-gray-400 text-gray-700 py-8 mt-10 px-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+    <footer class="px-10 py-8 mt-10 text-gray-700 bg-gray-400">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
       
                 <!-- Logo -->
                 <!-- <div class="text-2xl font-bold text-purple-700">
                     BigTino
                 </div> -->
 
-                <div class="font-bold text-3xl text-black logo ">
+                <div class="text-3xl font-bold text-black logo ">
                     <a href="#">B<span class="text-blue-500">i</span>g<span class="text-blue-500">T</span>i<span class="text-red-600">No</span></a>
                 </div>
 
@@ -213,7 +213,7 @@
             </div>
 
             <!-- Bottom note -->
-            <div class="text-center text-sm text-base font-semibold mt-6 ">
+            <div class="mt-6 text-sm text-base font-semibold text-center ">
             &copy; 2025 BigTino. All rights reserved.
             </div>
         </div>

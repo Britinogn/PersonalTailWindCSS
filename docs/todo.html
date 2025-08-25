@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/47ca9d9709.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            height: 100vh;
+            background: url('/docs//img/moon.png') no-repeat center center/cover ;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body >
+    <div class="container ">
+
+        <div id="task-container" class="w-[350px] py-5 px-10 bg-white rounded-[20px] shadow-lg flex ">
+            <input type="text" placeholder="Enter Task" id="input-task" class=" flex-5 mr-10 rounded-b-md p-5 text-md">
+            <button id="add-task" class="text-[1.2rem] transition-[.3s] p-5 flex-1 bg-white text-green-500 rounded-[10px] shadow-[0_0_3px_rgba(0,0,0,5)] hover:bg-green-500 hover:text-white"> <i class="fas fa-plus"></i></button>
+        </div>
+    </div>
+
+    <script src="/docs/todo.js"></script>
+</body>
+</html>
